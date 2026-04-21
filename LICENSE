@@ -1,69 +1,62 @@
-Pratyush Non-Commercial License (PNCL) v2.0
+Flollama UnInc. License (FUNL) v1.0
+Copyright (c) 2026 Pratyush Kumar
 
-Copyright (c) 2025 Pratyush
+1. DEFINITIONS
+"Licensor" refers to Pratyush Kumar, the original author of the Software.
 
-Note: "Pratyush" refers to the same person as "Pratyush Kumar".
+"Software" refers to the Flollama project, including but not limited to source code, design, user interface, architecture, documentation, assets, and all associated materials.
 
-Official online profiles and contacts include:
-- https://github.com/pratyush0898
-- https://x.com/nvmpratyush
-- All mutually linked social media and contact accounts associated with these profiles.
+"You" or "Licensee" refers to any individual or entity exercising permissions granted under this License.
 
-This license applies to all parts of this project, including but not limited to:
-- Source code (JavaScript, TypeScript, Python, HTML, CSS, JSON, etc.)
-- Website structure, design, and styling (including HTML layout and TailwindCSS classes)
-- User interface and user experience (UI/UX)
-- Public text content, documentation, and written copy
-- Visual assets such as logos, icons, screenshots, and branding elements
 
-The term "Software" refers to all of the above.
+2. GRANT OF LICENSE
+Subject to the terms and conditions of this License, the Licensor grants you a limited, non-exclusive, non-transferable, and revocable license to:
 
-Permission is hereby granted to any person obtaining a copy of this Software to use, study, and modify it for personal and educational purposes only, subject to the following conditions.
+- Use the Software for personal and non-commercial purposes
+- Study, analyze, and learn from the Software
+- Modify the Software for private, non-commercial use
+- Copy and distribute unmodified versions of the Software with proper attribution
 
-YOU ARE ALLOWED TO:
 
-- Use the Software for personal learning or non-commercial educational purposes.
-- Fork or clone the repository for private or educational use.
-- Modify the Software for private, non-commercial use.
-- Share unmodified versions of the Software with proper attribution.
+3. RESTRICTIONS
+You may not, directly or indirectly:
 
-YOU ARE NOT ALLOWED TO:
+- Use the Software for any commercial purpose, including monetization, resale, licensing, or commercial distribution
+- Incorporate the Software, in whole or in substantial part, into any commercial product, service, or SaaS offering
+- Rebrand, sublicense, or redistribute the Software under different authorship or without clear attribution
+- Remove, alter, or obscure any copyright notice, attribution, or this License
+- Represent the Software or derivative works as your own original work
 
-- Use any part of the Software for commercial purposes.
-- Sell, resell, license, or monetize any part of the Software or its derivatives.
-- Remove, hide, or alter the author's name, credit, or this license file.
-- Misrepresent the Software or any derivative as your own original work.
-- Rebrand or republish the Software with modified authorship or without clear attribution.
-- Integrate the Software into monetized tools, services, SaaS platforms, or templates.
-- Use the design, content, layout, or source code in commercial offerings of any kind.
 
-ATTRIBUTION REQUIREMENTS:
+4. ATTRIBUTION
+All copies, distributions, and publicly accessible versions of the Software or derivative works must include the following attribution:
 
-All forks, copies, and public modifications must retain the following attribution visibly and clearly:
+Created by Pratyush Kumar
+https://github.com/pratyush0898
 
-Created by Pratyush Kumar (https://github.com/pratyush0898)
+This License must be included in all such distributions.
 
-This LICENSE file must be included with any published or distributed version of the Software.
 
-YOU SHOULD:
+5. COMMERCIAL USE
+Any use of the Software outside the scope of this License, including commercial use, requires prior written permission from the Licensor.
 
-- Give visible credit to the author when sharing or discussing the Software.
-- Include a mention such as: "Originally created by Pratyush Kumar – https://github.com/pratyush0898"
-- Keep the LICENSE file intact and clearly accessible in forks and public versions.
-- Respect the Software's intent as a personal and educational project, not for commercial gain.
-- Notify the author if you found the Software useful, as a courtesy.
-
-LICENSE VIOLATION:
-
-Violation of any of the above conditions grants the original author full rights to pursue appropriate legal action under applicable copyright, intellectual property, and software licensing laws.
-
-COMMERCIAL OR CUSTOM LICENSE REQUESTS:
-
-To request a commercial license, distribution rights, or use in monetized platforms, contact:
-
+Requests for commercial licensing may be directed to:
 https://x.com/nvmpratyush
-https://instagram.com/pratyush0898/
+https://instagram.com/pratyush0898
 
-DISCLAIMER:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+6. OWNERSHIP
+The Software is licensed, not sold. All rights, title, and interest in and to the Software remain with the Licensor.
+
+
+7. TERMINATION
+This License will terminate automatically if you fail to comply with its terms.
+Upon termination, you must stop using the Software and delete all copies in your possession.
+
+
+8. DISCLAIMER OF WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+
+9. LIMITATION OF LIABILITY
+IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT, OR OTHERWISE, ARISING FROM OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
