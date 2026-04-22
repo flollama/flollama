@@ -1,6 +1,8 @@
 Privacy Policy for Flollama
+
 Effective Date: August 21, 2025
-This Policy is intellectually managed by Flollama UnInc. Organisation meaning
+
+This Policy is intellectually managed by Flollama UnInc. Organisation
 
 1. Introduction
 This Privacy Policy explains how Flollama (“we”, “our”, or “us”) collects, uses, and shares information when you use our services, including the website flollama.in and the Flollama AI platform hosted at nvmpratyush/flollama (“Service”).
