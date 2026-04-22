@@ -99,9 +99,9 @@
 
 ## 📘 License
 
-Pratyush Non-Commercial License (PNCL) v2.0
+Flollama UnInc. License (FUNL) v1.0
 
-© 2025 Pratyush Kumar
+© 2026 Flollama UnInc.Pratyush Kumar
 
 Use allowed for personal, educational, and non-commercial purposes only. Redistribution, commercialization, or false attribution is strictly prohibited. You must retain author credits in all copies or forks.
 
