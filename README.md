@@ -1,12 +1,12 @@
 # 🦙 Flollama: Where Ideas Flow Freely
 
-> A full-stack, open-access AI chatbot powered by Gemini 2.0 Flash Lite, origanally Meta’s LLaMA 2.3 and built with Next.js — for everyone, free of cost.
+> A full-stack, open-access AI chatbot powered by Gemini 3.1 Flash Lite, origanally Meta’s LLaMA 2.3 and built with Next.js — for everyone, free of cost.
 
 ---
 
 ## 📖 Overview
 
-**Flollama** is a modern conversational AI chatbot developed by **[Pratyush Kumar](https://github.com/pratyush0898)**. Built using **Gemini 2.0 Flash Lite**, origanally, **Meta's LLaMA 3.2**, and a sleek **Next.js interface**, it offers an open-source, privacy-respecting ChatGPT-style experience — ideal for students, creators, and casual users alike.
+**Flollama** is a modern conversational AI chatbot developed by **[Pratyush Kumar](https://github.com/pratyush0898)**. Built using **Gemini 3.1 Flash Lite**, origanally, **Meta's LLaMA 3.2**, and a sleek **Next.js interface**, it offers an open-source, privacy-respecting ChatGPT-style experience — ideal for students, creators, and casual users alike.
 
 ---
 
@@ -14,7 +14,7 @@
 
 | Layer            | Tools Used |
 |------------------|------------|
-| 🧠 AI Engine     | `Gemini 2.0 Flash Lite`, *custom system prompt* |
+| 🧠 AI Engine     | `Gemini 3.1 Flash Lite`, *custom system prompt* |
 | 🌐 Frontend      | `Next.js 15`, `TailwindCSS 4`, `SCSS`, `React`, `Shadcn UI` |
 | ⚙️ Backend/API   | `Next.js API Routes`, `Node.js 24`, `npm 10`, `Turbopack` |
 | 🔐 Auth & DB     | `Firebase Auth`, `Firestore Database` |
@@ -26,7 +26,7 @@
 
 ## 🧩 Features
 
-- 💬 Gemini 2.0 Flash Lite powered AI chat via Gemini API
+- 💬 Gemini 3.1 Flash Lite powered AI chat via Gemini API
 - 🌓 Light & Dark UI themes with Tailwind + Shadcn
 - 🔐 Firebase Google Sign-In
 - 📊 Chat history storage in Firestore
