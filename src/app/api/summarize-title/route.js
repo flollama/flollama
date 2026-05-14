@@ -1,62 +1,161 @@
 import { NextResponse } from "next/server";
 import { GoogleGenAI } from "@google/genai";
 
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
+const ai = new GoogleGenAI({
+  apiKey: process.env.GEMINI_API_KEY,
+});
+
+const MODEL =
+  process.env.GEMINI_MODEL || "gemini-3.1-flash-lite";
 
 export async function GET() {
   try {
     const res = await fetch(
-      'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=txt&type=single'
+      "https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=txt&type=single"
     );
 
-    if (!res.ok) throw new Error('Failed to fetch joke');
+    if (!res.ok) {
+      throw new Error("Failed to fetch joke");
+    }
 
     const joke = await res.text();
 
     return new NextResponse(joke, {
       status: 200,
-      headers: { 'Content-Type': 'text/plain' },
+      headers: {
+        "Content-Type": "text/plain",
+      },
     });
+
   } catch (error) {
-    console.error('Error fetching joke:', error);
-    return new NextResponse('Failed to fetch joke', { status: 500 });
+    console.error("Error fetching joke:", error);
+
+    return new NextResponse("Failed to fetch joke", {
+      status: 500,
+    });
   }
+}
+
+function sanitizeInput(text = "") {
+  return text
+    .replace(/\0/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 2000);
 }
 
 export async function POST(req) {
   try {
-    const { input } = await req.json();
+    const body = await req.json();
 
-    if (!input || input.trim() === "") {
+    const input = sanitizeInput(body?.input);
+
+    if (!input) {
       return NextResponse.json(
-        { error: "Missing input text" },
-        { status: 400 }
+        {
+          error: "Missing input text",
+        },
+        {
+          status: 400,
+        }
       );
     }
 
-    // System prompt to summarize input into 2-4 word lowercase title
-    const systemPrompt = `You are an AI assistant that generates concise conversation titles. Given the user's starting prompt for a conversation with an AI assistant, create a 2 to 4 word title that summarizes the conversation. Use only lowercase letters. Do not include punctuation, quotes, or any extra text. Respond with exactly the title and nothing else.`;
-
-    // Combine system prompt + user input
-    const prompt = `${systemPrompt}\n${input}`;
-
     const response = await ai.models.generateContent({
-      model: process.env.GEMINI_MODEL, // model from env
-      contents: prompt,
+      model: MODEL,
+
+      config: {
+        temperature: 0.3,
+        topP: 0.8,
+        maxOutputTokens: 20,
+
+        systemInstruction: `
+Generate a concise conversation title.
+
+Rules:
+- 2 to 4 words only
+- lowercase only
+- no punctuation
+- no quotes
+- no emojis
+- no markdown
+- summarize the topic naturally
+- respond with only the title
+`,
+      },
+
+      contents: [
+        {
+          role: "user",
+          parts: [
+            {
+              text: "How do black holes work?",
+            },
+          ],
+        },
+        {
+          role: "model",
+          parts: [
+            {
+              text: "black hole physics",
+            },
+          ],
+        },
+        {
+          role: "user",
+          parts: [
+            {
+              text: "Write a quicksort in javascript",
+            },
+          ],
+        },
+        {
+          role: "model",
+          parts: [
+            {
+              text: "javascript quicksort",
+            },
+          ],
+        },
+        {
+          role: "user",
+          parts: [
+            {
+              text: input,
+            },
+          ],
+        },
+      ],
     });
 
-    let title = response.text?.trim().toLowerCase();
+    let title = response.text
+      ?.trim()
+      .toLowerCase()
+      .replace(/[^\w\s]/g, "")
+      .replace(/\s+/g, " ");
 
-    // fallback if Gemini returns empty
     if (!title || title.length === 0) {
-      title = input.split(" ").slice(0, 4).join(" ").toLowerCase();
+      title = input
+        .split(" ")
+        .slice(0, 4)
+        .join(" ")
+        .toLowerCase();
     }
 
-    return NextResponse.json({ title });
+    return NextResponse.json({
+      title,
+    });
 
-  } catch (err) {
-    console.error("[summarize-title]", err);
-    return NextResponse.json({ error: err.message }, { status: 500 });
+  } catch (error) {
+    console.error("[summarize-title]", error);
+
+    return NextResponse.json(
+      {
+        error: "Failed to generate title",
+      },
+      {
+        status: 500,
+      }
+    );
   }
 }
