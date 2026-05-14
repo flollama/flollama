@@ -9,13 +9,13 @@ import { ProtectedRouteProvider, useProtectedRoute } from "@/context/ProtectedRo
 
 /** @type {import('next').Metadata} */
 export const metadata = {
-  title: "Flollama – Open‑Source Gemini 2.0 Flash Lite AI Chatbot by Pratyush",
+  title: "Flollama – Open‑Source Gemini 3.1 Flash Lite AI Chatbot by Pratyush",
   description:
-    "Flollama by Pratyush is an open‑source, privacy‑first AI chatbot built with Gemini and Next.js. Enjoy fast, stylish conversations powered by the Gemini 2.0 Flash Lite.",
+    "Flollama by Pratyush is an open‑source, privacy‑first AI chatbot built with Gemini and Next.js. Enjoy fast, stylish conversations powered by the Gemini 3.1 Flash Lite.",
   keywords: [
     "Flollama",
     "AI chatbot",
-    "Gemini 2.0 Flash Lite",
+    "Gemini 3.1 Flash Lite",
     "open‑source",
     "Gemini",
     "Next.js",
@@ -42,9 +42,9 @@ export const metadata = {
 
   openGraph: {
     title:
-      "Flollama – Open‑Source Gemini 2.0 Flash Lite AI Chatbot by Pratyush",
+      "Flollama – Open‑Source Gemini 3.1 Flash Lite AI Chatbot by Pratyush",
     description:
-      "Flollama is a blazing‑fast, private AI chatbot powered by Gemini 2.0 Flash Lite, built with Next.js and Tailwind CSS. No API key required—chat instantly.",
+      "Flollama is a blazing‑fast, private AI chatbot powered by Gemini 3.1 Flash Lite, built with Next.js and Tailwind CSS. No API key required—chat instantly.",
     url: "https://flollama.in/",
     siteName: "Flollama",
     images: [
