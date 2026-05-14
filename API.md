@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Flollama Chat API (https://flollama.in/api/chat) is a Public and Free REST API, it provides a streaming chat interface powered by Gemini 2.0 Flash Lite. It can be used without any API token, membership, registration or payment. This guide covers how to interact with the API using various programming languages and approaches.
+The Flollama Chat API (https://flollama.in/api/chat) is a Public and Free REST API, it provides a streaming chat interface powered by Gemini 3.1 Flash Lite. It can be used without any API token, membership, registration or payment. This guide covers how to interact with the API using various programming languages and approaches.
 
 ## API Specification
 
